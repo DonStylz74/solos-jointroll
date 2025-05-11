@@ -1,6 +1,6 @@
 local is_smoking = false
 
-
+--[[
 RegisterNetEvent('solos-joints:client:UseJointItem', function(strain)
     local joint_effect = config.strains[strain].effect
 
@@ -21,6 +21,7 @@ RegisterNetEvent('solos-joints:client:UseJointItem', function(strain)
         effects[joint_effect].action()
     end    
 end)
+]]--
 
 local function JointMenu()
     local joint_options = {}
@@ -152,7 +153,7 @@ RegisterNuiCallback('roll-fail', function(data)
     end
 end)
 
-
+--[[
 -- Press X to stop smoking: 
 
 -- You can comment out or delete below if you have a 'handsup' keybiind that cancels emotes
@@ -174,3 +175,4 @@ CreateThread(function()
         Wait(sleep)
     end
 end)
+]]--

@@ -135,6 +135,7 @@ elseif config.framework.custom then
     end)
 end
 
+--[[
 -- make joints useable:
 
 if config.framework.qb then 
@@ -177,3 +178,4 @@ elseif config.framework.custom then
         end
     end)
 end
+]]--
