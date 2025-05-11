@@ -36,60 +36,52 @@ config.RollingPaper = {
 
 
 config.strains = {      
-    ['OGKush Joint'] = {     
-        joint = 'joint_ogk',                -- Item name of the joint that player will receive
+    ['OGKush Joint'] = { 
+        joint = 'joint_ogk', 
+        effect = '',
+        receive = 1, 
+        required = { 
+            item = 'weed_og', 
+            amount = 1, 
+        },
+    },
+    ['Skunk Joint'] = {     
+        joint = 'joint_sk',                -- Item name of the joint that player will receive
         effect = '',                               -- Effect that will be applied to player when smoking this joint 
         receive = 1,                                    -- Amount of joints that player will receive after using joint roller
         required = {        
-            item = 'weed_og',               -- Item name of the weed that is required to roll this joint (can be dry bud, bag of weed, whatever you want)
+            item = 'weed_lemonhaze',               -- Item name of the weed that is required to roll this joint (can be dry bud, bag of weed, whatever you want)
             amount = 1,                                 -- Amount of that item that is required to roll this joint
         },
     },
-    ['Blue Dream'] = { 
-        joint = 'blue_dream_joint', 
-        effect = 'armor',
-        receive = 1, 
-        required = { 
-            item = 'blue_dream_bag', 
-            amount = 1, 
+    ['Purplehaze Joint'] = {     
+        joint = 'joint_ph',                -- Item name of the joint that player will receive
+        effect = '',                               -- Effect that will be applied to player when smoking this joint 
+        receive = 1,                                    -- Amount of joints that player will receive after using joint roller
+        required = {        
+            item = 'weed_purple_haze',               -- Item name of the weed that is required to roll this joint (can be dry bud, bag of weed, whatever you want)
+            amount = 1,                                 -- Amount of that item that is required to roll this joint
         },
     },
-    ['Skunk Joint'] = {
-        joint = 'joint_sk', 
+    ['WhiteWidow Joint'] = { 
+        joint = 'joint_ww', 
         effect = '',
         receive = 1, 
         required = { 
-            item = 'weed_lemonhaze', 
+            item = 'weed_white_widow', 
             amount = 1, 
-        },
-    },
-    ['Purplehaze Joint'] = {
-        joint = 'joint_ph', 
-        effect = '',
-        receive = 1, 
-        required = { 
-            item = 'weed_purple_haze', 
-            amount = 1, 
-        },
-    },
-    ['WhiteWidow Joint'] = {
-        joint = 'joint_ww',
-        effect = '',
-        receive = 1,
-        required = {
-            item = 'weed_white_widow',
-            amount = 1,
         },
     },
 --[[
-    ['Golden Goat'] = {
-        joint = 'golden_goat_joint',
-        effect = 'stress',
-        receive = 1,
-        required = {
-            item = 'golden_goat_bag',
-            amount = 1,
+    ['Pineapple Express'] = {
+        joint = 'pineapple_express_joint', 
+        effect = 'speed',
+        receive = 1, 
+        required = { 
+            item = 'pineapple_express_bag', 
+            amount = 1, 
         },
     },
 ]]--
+
 }
